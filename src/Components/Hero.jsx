@@ -20,7 +20,7 @@ const Hero = () => {
     };
 
     return (
-        <div id='home' className='min-h-screen flex items-center justify-center bg-linear-to-br from-dark-100 via-dark-200 to-dark-100 overflow-hidden relative pt-20 md:pt-0'>
+        <div id='home' className='min-h-screen flex items-center justify-center bg-linear-to-br from-dark-100 via-dark-200 to-dark-100 overflow-hidden relative pt-20 md:pt-0 pb-20'>
 
             {/* Background Glow */}
             <div className='absolute top-20 left-20 w-72 h-72 bg-purple/20 rounded-full blur-[100px]'></div>
