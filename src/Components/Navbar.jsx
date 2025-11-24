@@ -100,7 +100,7 @@ const Navbar = () => {
                 </div>
 
                 {/* Mobile Menu Button */}
-                <div className='md:hidden z-[60]'>
+                <div className='md:hidden z-60'>
                     <button onClick={() => setShowmenu(!showMenu)} className='text-white text-2xl focus:outline-none relative'>
                         {showMenu ? <FaXmark /> : <FaBars />}
                     </button>
@@ -108,12 +108,12 @@ const Navbar = () => {
 
                 {/* Mobile Menu Overlay (Backdrop) */}
                 <div
-                    className={`fixed inset-0 bg-black/50 backdrop-blur-sm z-[55] transition-opacity duration-300 md:hidden ${showMenu ? 'opacity-100 visible' : 'opacity-0 invisible'}`}
+                    className={`fixed inset-0 bg-black/50 backdrop-blur-sm z-55 transition-opacity duration-300 md:hidden ${showMenu ? 'opacity-100 visible' : 'opacity-0 invisible'}`}
                     onClick={() => setShowmenu(false)}
                 ></div>
 
                 {/* Mobile Menu Drawer */}
-                <div className={`fixed top-0 right-0 h-full w-3/4 max-w-xs bg-dark-200 border-l border-gray-800 z-[56] shadow-2xl transform transition-transform duration-300 ease-in-out ${showMenu ? 'translate-x-0' : 'translate-x-full'} md:hidden flex flex-col justify-center`}>
+                <div className={`fixed top-0 right-0 h-full w-3/4 max-w-xs bg-dark-200 border-l border-gray-800 z-56 shadow-2xl transform transition-transform duration-300 ease-in-out ${showMenu ? 'translate-x-0' : 'translate-x-full'} md:hidden flex flex-col justify-center`}>
                     <div className='flex flex-col gap-6 p-8'>
                         {navLinks.map((link) => (
                             <button
